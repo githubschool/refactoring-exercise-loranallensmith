@@ -6,19 +6,16 @@
 
 
 class Student
-  def first_year_level
-    "freshman"
+
+  YEAR_LEVEL = {
+    first: "freshman",
+    second: "sophomore",
+    third: "junior",
+    fourth: "senior",
+  }
+
+  def year_level index
+    YEAR_LEVEL[index]
   end
 
-  def second_year_level
-    "sophomore"
-  end
-
-  def third_year_level
-    "junior"
-  end
-
-  def fourth_year_level
-    "senior"
-  end
 end
